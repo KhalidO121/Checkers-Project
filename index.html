@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Geostar+Fill&family=Permanent+Marker&family=VT323&display=swap" rel="stylesheet">
+        <!---->
+        <link rel="stylesheet" href="style.css">
+        <title>CHECKERS GAME</title>
+        <!-- SWUP TRANSITION LIBRARY
+        <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>   -->
+    </head>
+    <body>
+    
+        <div class = "intro">
+            <h1 class = "logo-header">
+                <!--Have two different span classes because I'm going to do seperate animations
+                on each part-->
+                <span class = "logo">Ch</span><span class ="logo">ec</span><span class="logo">ke</span><span class="logo">rs.</span>
+            </h1>
+        </div>
+
+        <header>
+            <h4>CHECKERS</h4>
+        </header>
+
+        <!-- PLAY BUTTON -->
+        <button onclick="startGame()" class="playButton">PLAY!</button>
+
+        <!-- TUTORIAL BUTTON -->
+        <button class ="tutorialButton">TUTORIAL</button>
+        
+        <!-- SETTINGS BUTTON -->
+        <button class="settingsButton">SETTINGS</button>
+
+        <!-- 1 V 1 BUTTON -->
+        <button class = "local" id = "1V1 MODE"></button>
+
+          
+        <!-- Linking to Javascript file -->
+        <script src="script.js"></script>
+
+        <!-- BACKGROUND PARTICLES -->
+        <div id="particles-js">
+            <div class="center-text">
+                
+            </div>
+        </div>
+    
+        <!-- particles js files -->
+        
+        <script src="particles.js"></script>
+        <script src="app.js"></script>
+        
+    </body>
+</html>

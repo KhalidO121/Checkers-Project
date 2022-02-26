@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
+    /* overflow: hidden; */
+}
+
+::selection {
+    color: none;
+    background: none;
+}
+
+body{
+    overflow: hidden;
+    height: 100vh;
+    /* background-size: cover; */
+}
+
+
+/* CHECKERS LOGO AND SLIDE SCREEN */
+header {
+    position: absolute;
+    left: 0;
+    top: 15%;
+    width: 100%;
+    /* height: 10vh; */
+    border: none;
+    color: #ffffff;
+}
+
+header h4{
+    position: absolute;
+    left: 10%;
+    bottom: 1rem;
+    font-size: 35px;
+}
+
+.intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #000000
+}
+
+.logo {
+    position: relative;
+    display: inline-block; 
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 1s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 1s;
+}
+/* PLAY BUTTON */
+.playButton{
+    position:absolute;
+    font-family: 'VT323', monospace;
+	width: 150px;
+	height: 50px;
+	cursor:pointer;
+	font-size: 30px;
+	font-weight: 900;
+	background: white;
+	transition: 500ms ease-in-out;
+    width: 17%;
+    right: 43%;
+    top: 30%;
+}
+
+button:hover {
+	box-shadow: 20px 5px 0 rgb(255, 255, 255), -20px -5px 0 rgb(255, 255, 255);
+}
+
+button:focus {
+	outline: none;
+}
+
+/* TUTORIAL BUTTON */
+.tutorialButton {
+    position:absolute;
+    font-family: 'VT323', monospace;
+    padding: 0;
+    border: none;
+    background: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 15%;
+    will-change: transform;
+    right: 44%;
+    top: 45%;
+  }
+  
+  .tutorialButton:disabled {
+    pointer-events: none;
+  }
+  
+  .tutorialButton:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .tutorialButton:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+/* SETTINGS BUTTON */
+.settingsButton {
+    position:absolute;
+    font-family: 'VT323', monospace;
+    padding: 0;
+    border: none;
+    background: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 15%;
+    will-change: transform;
+    right: 44%;
+    bottom: 35%;
+  }
+  
+  .settingsButton:disabled {
+    pointer-events: none;
+  }
+  
+  .settingsButton:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .settingsButton:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+/* BACKGROUND PARTICLES */
+/* we use dot (.) to target class and
+    hash (#) to target id... */
+    #particles-js {
+        width: 100%;
+        height: 100vh;
+         background-image:
+            linear-gradient(rgb(0, 0, 0),
+                rgb(0, 0, 0));
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+
+.local{
+    position: absolute;
+    display: block;
+}
