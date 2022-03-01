@@ -754,6 +754,8 @@ var pJS = function(tag_id, params){
 
     pJS.tmp.pushing = true;
 
+//Added a if condition to limit number of particles that can be displayed to not affect page performance
+    if(pJS.particles.array.length<150){
     for(var i = 0; i < nb; i++){
       pJS.particles.array.push(
         new pJS.fn.particle(
@@ -772,8 +774,8 @@ var pJS = function(tag_id, params){
         pJS.tmp.pushing = false;
       }
     }
-
-  };
+  }
+};
 
 
   pJS.fn.modes.removeParticles = function(nb){

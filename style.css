@@ -18,6 +18,9 @@ body{
 }
 
 
+a {
+  text-decoration: none;
+}
 /* CHECKERS LOGO AND SLIDE SCREEN */
 header {
     position: absolute;
@@ -74,7 +77,7 @@ header h4{
     transition: ease-in-out 1s;
 }
 /* PLAY BUTTON */
-.playButton{
+/* .playButton{
     position:absolute;
     font-family: 'VT323', monospace;
 	width: 150px;
@@ -95,111 +98,118 @@ button:hover {
 
 button:focus {
 	outline: none;
+} */
+
+
+/* PLAY LINK */
+/* Changed the button to a link so I can navigate around my page */
+/* a.playLink{
+    text-decoration: none;
+} */
+.playLink{
+    font-family: 'VT323', monospace;
+    position: absolute;
+    right: 47%;
+    top: 30%;
+    color: white;
+    height: 50px;
+    font-size: 40px;
+    font-weight: 900;
 }
 
-/* TUTORIAL BUTTON */
-.tutorialButton {
-    position:absolute;
+.playLink::after{
+    content: "";
+    background: white;
+    mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+  
+.playLink:hover::after{
+      height: calc(100% + 8px)
+  }
+  
+/* TUTORIAL LINK */
+/* Styling my tutorial link */
+.tutorialLink{
     font-family: 'VT323', monospace;
-    padding: 0;
-    border: none;
-    background: none;
+    position: absolute;
+    right: 45%;
+    top: 40%;
+    /* width: 15px; */
+    height: 50px;
+    font-size: 40px;
+    font-weight: 900;
     color: #ffffff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: normal;
-    margin: 0;
-    min-height: 60px;
-    min-width: 0;
-    outline: none;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 15%;
-    will-change: transform;
-    right: 44%;
-    top: 45%;
-  }
-  
-  .tutorialButton:disabled {
-    pointer-events: none;
-  }
-  
-  .tutorialButton:hover {
-    color: #fff;
-    background-color: #1A1A1A;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-  }
-  
-  .tutorialButton:active {
-    box-shadow: none;
-    transform: translateY(0);
-  }
+    }
+    
+.tutorialLink::before{
+content: '';
+position: absolute;
+bottom: 20%;
+right: 0;
+width: 0;
+height: 2px;
+background-color: #ffffff;
+transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
 
-/* SETTINGS BUTTON */
-.settingsButton {
-    position:absolute;
+@media (hover: hover) and (pointer: fine) {
+.tutorialLink:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+    }
+}
+/* SETTINGS LINK */
+.settingsLink{
     font-family: 'VT323', monospace;
-    padding: 0;
-    border: none;
-    background: none;
+    position: absolute;
+    right: 45%;
+    top: 50%;
+    /* width: 15px; */
+    height: 50px;
+    font-size: 40px;
+    font-weight: 900;
     color: #ffffff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: normal;
-    margin: 0;
-    min-height: 60px;
-    min-width: 0;
-    outline: none;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 15%;
-    will-change: transform;
-    right: 44%;
-    bottom: 35%;
-  }
-  
-  .settingsButton:disabled {
-    pointer-events: none;
-  }
-  
-  .settingsButton:hover {
-    color: #fff;
-    background-color: #1A1A1A;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-  }
-  
-  .settingsButton:active {
-    box-shadow: none;
-    transform: translateY(0);
-  }
+}
+    
+.settingsLink::before{
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+.settingsLink:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+    }
+}
 
 /* BACKGROUND PARTICLES */
 /* we use dot (.) to target class and
-    hash (#) to target id... */
-    #particles-js {
-        width: 100%;
-        height: 100vh;
-         background-image:
-            linear-gradient(rgb(0, 0, 0),
-                rgb(0, 0, 0));
-        background-position: center;
-        background-size: cover;
-        z-index: -1;
-    }
+hash (#) to target id... */
+#particles-js {
+    width: 100%;
+    height: 100vh;
+        background-image:
+        linear-gradient(rgb(0, 0, 0),
+            rgb(0, 0, 0));
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
 
 .local{
     position: absolute;

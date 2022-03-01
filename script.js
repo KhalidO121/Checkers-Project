@@ -1,5 +1,3 @@
-// import SWUP from 'swup'
-
 let intro = document.querySelector('.intro')
 let logo = document.querySelector('.logo-header')
 let logoSpan = document.querySelectorAll('.logo')
@@ -50,3 +48,5 @@ function startGame(){
     }
     // document.getElementById("1V1 MODE").innerHTML = "Let's Play!"
 }
+
+// Now going to add page transitions to our game
