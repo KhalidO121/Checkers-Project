@@ -215,3 +215,117 @@ hash (#) to target id... */
     position: absolute;
     display: block;
 }
+
+/* PAGE TRANSITIONS */
+.transition-fade{
+    opacity: 1;
+    transition: 500ms;
+    transform: translateX(0);
+    transform-origin: left;
+}
+
+html.is-animating .transition-fade{
+    opacity: 1;
+    transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade{
+    opacity: 0;
+    transform: translateX(0);
+}
+
+/* PLAY ONLINE LINK */
+.playOnlineLink{
+    font-family: 'VT323', monospace;
+    position: absolute;
+    right: 43%;
+    top: 30%;
+    /* width: 15px; */
+    height: 50px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #ffffff;
+    }
+    
+.playOnlineLink::before{
+content: '';
+position: absolute;
+bottom: 20%;
+right: 0;
+width: 0;
+height: 2px;
+background-color: #ffffff;
+transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+.playOnlineLink:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+    }
+}
+
+/* ONE PLAYER LINK */
+.onePlayerLink{
+    font-family: 'VT323', monospace;
+    position: absolute;
+    right: 45.5%;
+    top: 40%;
+    /* width: 15px; */
+    height: 50px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #ffffff;
+    }
+    
+.onePlayerLink::before{
+content: '';
+position: absolute;
+bottom: 20%;
+right: 0;
+width: 0;
+height: 2px;
+background-color: #ffffff;
+transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+.onePlayerLink:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+    }
+}
+
+/* TWO PLAYER LINK */
+.twoPlayerLink{
+    font-family: 'VT323', monospace;
+    position: absolute;
+    right: 45.5%;
+    top: 50%;
+    /* width: 15px; */
+    height: 50px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #ffffff;
+    }
+    
+.twoPlayerLink::before{
+content: '';
+position: absolute;
+bottom: 20%;
+right: 0;
+width: 0;
+height: 2px;
+background-color: #ffffff;
+transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+.twoPlayerLink:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+    }
+}
