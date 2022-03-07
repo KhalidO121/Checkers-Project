@@ -4,9 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAME</title>
+    <title>TwoPlayerGame</title>
+    <script src="gameScript.js"></script>
+    <link rel="stylesheet" href="gameStyle.css">
 </head>
 <body>
-    
+    <!-- Creating the chessboard -->
+    <!-- Each tr representing a row in chessboard and each td representing a cell in that row -->
+    <!-- 8 rows and thus 8 columns -->
+    <table>
+        <tr>
+            <td class="emptycell"></td>
+            <td><p class="blackDisk" id="0"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="blackDisk" id="1"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="blackDisk" id="2"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="blackDisk" id="3"></p></td>
+        </tr>
+        <tr>
+            <td><p class="blackDisk" id="4"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="blackDisk" id="5"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="blackDisk" id="6"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="blackDisk" id="7"></p></td>
+            <td class="emptycell"></td>
+        </tr>
+        <tr>
+            <td class="emptycell"></td>
+            <td><p class="blackDisk" id="8"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="blackDisk" id="9"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="blackDisk" id="10"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="blackDisk" id="11"></p></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="emptycell"></td>
+            <td></td>
+            <td class="emptycell"></td>
+            <td></td>
+            <td class="emptycell"></td>
+            <td></td>
+            <td class="emptycell"></td>
+        </tr>
+        <tr>
+            <td class="emptycell"></td>
+            <td></td>
+            <td class="emptycell"></td>
+            <td></td>
+            <td class="emptycell"></td>
+            <td></td>
+            <td class="emptycell"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><p class="whiteDisk" id="12"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="whiteDisk" id="13"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="whiteDisk" id="14"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="whiteDisk" id="15"></p></td>
+            <td class="emptycell"></td>
+        </tr>
+        <tr>
+            <td class="emptycell"></td>
+            <td><p class="whiteDisk" id="16"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="whiteDisk" id="17"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="whiteDisk" id="18"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="whiteDisk" id="19"></p></td>
+        </tr>
+        <tr>
+            <td><p class="whiteDisk" id="20"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="whiteDisk" id="21"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="whiteDisk" id="22"></p></td>
+            <td class="emptycell"></td>
+            <td><p class="whiteDisk" id="23"></p></td>
+            <td class="emptycell"></td>
+        </tr>
+    </table>
+    <div class="whiteTurnSign">
+        WHITE TURN!
+    </div>
+    <div class="seperator">----</div>
+    <div class="blackTurnSign">
+        BLACK TURN!
+    </div>
 </body>
 </html>

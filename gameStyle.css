@@ -1,0 +1,98 @@
+*{
+    margin: auto;
+}
+table{
+    padding: 0 0 0 3px; 
+    border-spacing: 2px;
+    table-layout: fixed;
+    margin-top: 30px;
+}
+
+p{
+    display: inline-block;
+    
+}
+
+p:hover{
+    animation-name: disk-effect;
+    animation-duration: .5s;
+}
+
+
+td{
+    background-color: darkgray;
+    width: 73px;
+    height: 73px;
+    text-align: center;
+    border: 1.5px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.emptycell{
+    background-color: white;
+}
+
+td:hover{
+    background: rgb(88, 124, 224);
+    transform: translate(0, -4px);
+    animation-name: hover-effect;
+    animation-duration: .5s;
+}
+
+@keyframes hover-effect{
+    from {background-color: darkgray;}
+    to {background-color: rgb(88, 124, 224);}
+}
+
+.blackDisk{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    /* padding: 5px; */
+    background-color: black;
+    border: 1px solid white;
+}
+
+.whiteDisk{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 1.5px solid rgb(0, 0, 0);
+}
+
+.king.blackDisk{
+    background-color: black;
+}
+
+.king.whiteDisk{
+    background-color: white;
+}
+
+.whiteTurnSign {
+    font-family: 'VT323', monospace;
+    position: absolute;
+    top: 35%;
+    right: 7%;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.blackTurnSign {
+    font-family: 'VT323', monospace;
+    position: absolute;
+    top: 45%;
+    right: 7%;
+    color: lightgray;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.seperator{
+    position: absolute;
+    top: 34%;
+    right: 10%;
+    font-size: 90px; 
+}
