@@ -1,6 +1,28 @@
+html{
+    background-color: rgb(255, 255, 255);
+}
+
 *{
     margin: auto;
+    
 }
+
+img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 5%;
+    top: 3%;
+    border: 1px dashed black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+img:hover{
+    transform: translate(-2px, 0px);
+}
+
+
 table{
     padding: 0 0 0 3px; 
     border-spacing: 2px;
@@ -11,11 +33,6 @@ table{
 p{
     display: inline-block;
     
-}
-
-p:hover{
-    animation-name: disk-effect;
-    animation-duration: .5s;
 }
 
 
@@ -49,7 +66,6 @@ td:hover{
     border-radius: 50px;
     width: 50px;
     height: 50px;
-    /* padding: 5px; */
     background-color: black;
     border: 1px solid white;
 }
@@ -70,17 +86,21 @@ td:hover{
     background-color: white;
 }
 
-.whiteTurnSign {
+.white_Turn_Sign {
     font-family: 'VT323', monospace;
     position: absolute;
-    top: 35%;
+    top: 33%;
     right: 7%;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     font-weight: 500;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 6px;
+    background-color: rgb(255, 255, 255);
 }
 
-.blackTurnSign {
+.black_Turn_Sign {
     font-family: 'VT323', monospace;
     position: absolute;
     top: 45%;
@@ -88,6 +108,9 @@ td:hover{
     color: lightgray;
     font-size: 30px;
     font-weight: 500;
+    border: 3px solid darkgray;
+    border-radius: 30px;
+    padding: 6px;
 }
 
 .seperator{
@@ -96,3 +119,4 @@ td:hover{
     right: 10%;
     font-size: 90px; 
 }
+
