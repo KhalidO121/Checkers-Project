@@ -32,23 +32,23 @@ window.addEventListener('DOMContentLoaded', () =>{
 })
 
 // Pressing play to start the game.
-function startGame(){
-    let localButton = document.getElementById("1V1 MODE")
-    let displayButton = localButton.style.display
+// function startGame(){
+//     let localButton = document.getElementById("1V1 MODE")
+//     let displayButton = localButton.style.display
 
-    if(displayButton == 'block'){
-        localButton.style.display = 'none'
+//     if(displayButton == 'block'){
+//         localButton.style.display = 'none'
 
-        document.getElementById("1V1 MODE").innerHTML = "Let's Not Play!"
-    }
+//         document.getElementById("1V1 MODE").innerHTML = "Let's Not Play!"
+//     }
 
-    else{
-        localButton.style.display = 'block'
+//     else{
+//         localButton.style.display = 'block'
 
-        document.getElementById("1V1 MODE").innerHTML = "Let's Play!"
+//         document.getElementById("1V1 MODE").innerHTML = "Let's Play!"
 
-    }
+//     }
     // document.getElementById("1V1 MODE").innerHTML = "Let's Play!"
-}
+
 
 // Now going to add page transitions to our game

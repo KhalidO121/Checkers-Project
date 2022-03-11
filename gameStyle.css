@@ -1,10 +1,11 @@
 html{
     background-color: rgb(255, 255, 255);
+    /* height: 100%; 
+    overflow: hidden */
 }
 
 *{
-    margin: auto;
-    
+    margin: auto;  
 }
 
 img{
@@ -32,7 +33,10 @@ table{
 
 p{
     display: inline-block;
-    
+}
+
+span{
+    display: inline-block;
 }
 
 
@@ -67,7 +71,7 @@ td:hover{
     width: 50px;
     height: 50px;
     background-color: black;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .whiteDisk{
@@ -78,15 +82,15 @@ td:hover{
     border: 1.5px solid rgb(0, 0, 0);
 }
 
-.king.blackDisk{
+.King.blackDisk{
     background-color: black;
 }
 
-.king.whiteDisk{
+.King.whiteDisk{
     background-color: white;
 }
 
-.white_Turn_Sign {
+.black_Turn_Sign {
     font-family: 'VT323', monospace;
     position: absolute;
     top: 33%;
@@ -97,10 +101,9 @@ td:hover{
     border: 3px solid rgb(0, 0, 0);
     border-radius: 30px;
     padding: 6px;
-    background-color: rgb(255, 255, 255);
 }
 
-.black_Turn_Sign {
+.white_Turn_Sign {
     font-family: 'VT323', monospace;
     position: absolute;
     top: 45%;
@@ -112,6 +115,7 @@ td:hover{
     border-radius: 30px;
     padding: 6px;
 }
+
 
 .seperator{
     position: absolute;
