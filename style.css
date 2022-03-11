@@ -222,7 +222,8 @@ hash (#) to target id... */
 }
 
 /* PAGE TRANSITIONS */
-.transition-fade{
+
+/* .transition-fade{
     opacity: 1;
     transition: 500ms;
     transform: translateX(0);
@@ -237,7 +238,7 @@ html.is-animating .transition-fade{
 html.is-leaving .transition-fade{
     opacity: 0;
     transform: translateX(0);
-}
+} */
 
 /* PLAY ONLINE LINK */
 .playOnlineLink{

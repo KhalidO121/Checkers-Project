@@ -1,4 +1,6 @@
-// const swup = new Swup()
+//  import Swup from 'swup';
+
+//  const swup = new swup()
 
 let intro = document.querySelector('.intro')
 let logo = document.querySelector('.logo-header')
