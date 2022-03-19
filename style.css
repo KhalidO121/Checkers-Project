@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
     /* overflow: hidden; */
 }
 
@@ -15,6 +15,21 @@ body{
     overflow: hidden;
     height: 100vh;
     /* background-size: cover; */
+}
+
+img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 5%;
+    top: 3%;
+    border: 5px dashed rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+img:hover{
+    transform: translate(-2px, 0px);
 }
 
 
@@ -30,6 +45,7 @@ header {
     /* height: 10vh; */
     border: none;
     color: #ffffff;
+    font-family: 'Permanent Marker', cursive; 
 }
 
 header h4{
@@ -55,12 +71,18 @@ header h4{
     transition:all 1s;
 }
 
+.menuArea{
+    opacity: 0;
+    transition:all 1s;
+}
+
 .logo-header {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: #000000
+    color: #000000;
+    font-family: 'Permanent Marker', cursive; 
 }
 
 .logo {
@@ -216,29 +238,11 @@ hash (#) to target id... */
     z-index: -1;
 }
 
-.local{
+/* .local{
     position: absolute;
     display: block;
-}
-
-/* PAGE TRANSITIONS */
-
-/* .transition-fade{
-    opacity: 1;
-    transition: 500ms;
-    transform: translateX(0);
-    transform-origin: left;
-}
-
-html.is-animating .transition-fade{
-    opacity: 1;
-    transform: translateX(100%);
-}
-
-html.is-leaving .transition-fade{
-    opacity: 0;
-    transform: translateX(0);
 } */
+
 
 /* PLAY ONLINE LINK */
 .playOnlineLink{
@@ -334,4 +338,97 @@ transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
     right: auto;
     width: 100%;
     }
+}
+
+/* Tutorial Box */
+
+h3{
+    text-decoration: underline;
+}
+.tutorial{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(49, 49, 49, 0.7);
+    /* transition: 0.4s; */
+    visibility: hidden;
+    opacity: 0;
+}
+
+.tutorial:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.tutorialContent{
+    position: absolute;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 8px;
+    font-family: 'Special Elite', cursive;
+    top: 30%;
+    max-height: 40%;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+
+.tutorialClose{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+
+/* Settings Box */
+.settings{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(49, 49, 49, 0.7);
+    transition: all 0.7s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.settings:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.settingsContent{
+    position: absolute;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 8px;
+    font-family: 'Special Elite', cursive;
+    top: 30%;
+    max-height: 40%;
+}
+
+
+.settingsClose{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
 }

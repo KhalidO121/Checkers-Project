@@ -12,7 +12,7 @@ const board = [
 // ---------Finding the exact location of the disk
 let find_Disk = function (disk_Id) {
     let parsed_Integer = parseInt(disk_Id);
-    return board.indexOf(parsed_Integer);
+    return board.indexOf(disk_Id);
 };
 
 
@@ -40,6 +40,7 @@ let selectedDisk = {
     disk_Id: -1,
     position_of_disk: -1,
     isKing: false,
+    
     //Identifying the positions it can move to
     seventhSpace: false,
     ninthSpace: false,
@@ -94,7 +95,7 @@ resetSelectedDiskProperties();
 
 // ------------resets the selected the Disk properties so each Disk returns to original state------------
 function resetSelectedDiskProperties() {
-    selectedDisk.disk_Id = -1;
+    // selectedDisk.disk_Id = -1;
     selectedDisk.disk_Id = -1;
     selectedDisk.isKing = false;
     selectedDisk.seventhSpace = false;

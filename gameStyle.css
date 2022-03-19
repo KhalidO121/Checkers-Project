@@ -71,7 +71,7 @@ td:hover{
     width: 50px;
     height: 50px;
     background-color: black;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1.5px solid rgb(0, 0, 0);
 }
 
 .whiteDisk{
