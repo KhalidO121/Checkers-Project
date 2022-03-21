@@ -83,11 +83,11 @@ td:hover{
 }
 
 .King.blackDisk{
-    content: url('kindpng_971641.png');
+    content: url('images/kindpng_971641.png');
 }
 
 .King.whiteDisk{
-    content: url('kindpng_7643211.png');
+    content: url('images/kindpng_7643211.png');
 }
 
 .black_Turn_Sign {
