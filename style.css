@@ -103,29 +103,7 @@ header h4{
     opacity: 0;
     transition: ease-in-out 1s;
 }
-/* PLAY BUTTON */
-/* .playButton{
-    position:absolute;
-    font-family: 'VT323', monospace;
-	width: 150px;
-	height: 50px;
-	cursor:pointer;
-	font-size: 30px;
-	font-weight: 900;
-	background: white;
-	transition: 500ms ease-in-out;
-    width: 17%;
-    right: 43%;
-    top: 30%;
-}
 
-button:hover {
-	box-shadow: 20px 5px 0 rgb(255, 255, 255), -20px -5px 0 rgb(255, 255, 255);
-}
-
-button:focus {
-	outline: none;
-} */
 
 
 /* PLAY LINK */
@@ -245,7 +223,7 @@ hash (#) to target id... */
 
 
 /* PLAY ONLINE LINK */
-.playOnlineLink{
+.playOnlineButton{
     font-family: 'VT323', monospace;
     position: absolute;
     right: 43%;
@@ -257,7 +235,7 @@ hash (#) to target id... */
     color: #ffffff;
     }
     
-.playOnlineLink::before{
+.playOnlineButton::before{
 content: '';
 position: absolute;
 bottom: 20%;
@@ -269,7 +247,7 @@ transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 @media (hover: hover) and (pointer: fine) {
-.playOnlineLink:hover::before{
+.playOnlineButton:hover::before{
     left: 0;
     right: auto;
     width: 100%;
@@ -277,7 +255,7 @@ transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 /* ONE PLAYER LINK */
-.onePlayerLink{
+.onePlayerButton{
     font-family: 'VT323', monospace;
     position: absolute;
     right: 45.5%;
@@ -289,7 +267,7 @@ transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
     color: #ffffff;
     }
     
-.onePlayerLink::before{
+.onePlayerButton::before{
 content: '';
 position: absolute;
 bottom: 20%;
@@ -301,7 +279,7 @@ transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 @media (hover: hover) and (pointer: fine) {
-.onePlayerLink:hover::before{
+.onePlayerButton:hover::before{
     left: 0;
     right: auto;
     width: 100%;
@@ -322,7 +300,7 @@ transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
     }
     
 .twoPlayerLink::before{
-content: '';
+content: "";
 position: absolute;
 bottom: 20%;
 right: 0;
@@ -337,6 +315,7 @@ transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
     left: 0;
     right: auto;
     width: 100%;
+    position: absolute;
     }
 }
 
@@ -432,3 +411,141 @@ h3{
     text-decoration: none;
     font-size: 36px;
 }
+
+/* Play online box */
+
+.playOnline{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(49, 49, 49, 0.7);
+    /* transition: all 0.7s; */
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.playOnline:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.playOnlineContent{
+    position: absolute;
+    background: #fff;
+    width: 500px;
+    height: 200px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 8px;
+    font-family: 'Special Elite', cursive;
+    top: 30%;
+    max-height: 40%;
+    z-index: 1;
+}
+
+
+.playOnlineClose{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.createGameButton{
+    position: absolute;
+    top: 20%;
+    right: 37%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Caesar Dressing', cursive;
+    text-decoration: underline;
+}
+
+.createGameButton:hover{
+    transform: translate(0px, -3px);
+}
+
+.joinGameButton{
+    position: absolute;
+    top: 44%;
+    right: 15%;
+    font-family: 'Caesar Dressing', cursive;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.joinGameButton:hover{
+    transform: translate(0px, -3px);
+}
+
+input{
+    position: absolute;
+    top: 44%;
+    right: 40%;
+    border-radius: 6px;
+    width: 50%;
+    height: 15%;
+}
+
+/* AI Difficulty Button */
+
+.AIDifficulty{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(49, 49, 49, 0.7);
+    /* transition: all 0.7s; */
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.AIDifficulty:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.AIDifficultyContent{
+    position: absolute;
+    background: #fff;
+    width: 500px;
+    /* height: 200px; */
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 8px;
+    font-family: 'Special Elite', cursive;
+    top: 40%;
+    /* max-height: 0%; */
+    z-index: 1;
+}
+
+
+.AIDifficultyClose{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
+}
+

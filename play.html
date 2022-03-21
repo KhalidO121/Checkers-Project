@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Geostar+Fill&family=Permanent+Marker&family=VT323&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=DotGothic16&family=Geostar+Fill&family=Ma+Shan+Zheng&family=Montserrat+Alternates:ital,wght@0,100;1,300&family=Permanent+Marker&family=Special+Elite&family=VT323&display=swap" rel="stylesheet">
         <!---->
         <link rel="stylesheet" href="style.css">
         <title>PLAY</title>
@@ -32,12 +32,37 @@
 
         <!-- PLAY BUTTON -->
         <div class="playArea">
-        <a class="playOnlineLink" href="/play.html">PLAY ONLINE!</a>
-
-        <!-- TUTORIAL BUTTON -->
-        <a class="onePlayerLink" href="/AIDifficulty.html">1 PLAYER</a>
         
-        <!-- SETTINGS BUTTON -->
+        <div class="playOnlineWrapper">
+            <a class="playOnlineButton" href="#playOnlineBox">PLAY ONLINE!</a> 
+        </div>
+
+        <div id="playOnlineBox" class="playOnline">
+            <div class="playOnlineContent">
+                <button class = "createGameButton">CREATE GAME</button>
+                <button class = "joinGameButton" id = 'btnJoin'>JOIN GAME</button>
+                <input type = 'text' id = 'txtGameId'>
+                <a href="#" class="playOnlineClose">&times;</a>
+            </div>
+        </div>
+
+        <!-- ONE PLAYER BUTTON -->
+        <div class="AIButton">
+            <a class="onePlayerButton" href="#AIDifficultyBox">1 PLAYER</a>
+        </div>
+
+        <div id="AIDifficultyBox" class="AIDifficulty">
+            <div class="AIDifficultyContent">
+                <a class="easyDifficulty" href="/easyDifficulty.html">EASY</a>
+                <a class="mediumDifficulty" href="/mediumDifficulty.html">MEDIUM</a>
+                <a class="hardDifficulty" href="/hardDifficulty.html">HARD</a>
+                <a href="#" class="AIDifficultyClose">&times;</a>
+            </div>
+        </div>
+
+
+        
+        <!-- TWO PLAYER LINK -->
         <a class="twoPlayerLink" href="/twoPlayerGame.html">2 PLAYER</a>
         </div>
 

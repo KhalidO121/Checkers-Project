@@ -282,7 +282,7 @@ function makeMove(number) {
 function changeData(position_of_disk, modifiedIndex, removeDisk) {
     board[position_of_disk] = null;
     board[modifiedIndex] = parseInt(selectedDisk.disk_Id);
-    if (player_Turn && selectedDisk.disk_Id < 12 && modifiedIndex >= 57) {
+    if (player_Turn && selectedDisk.disk_Id < 12 && modifiedIndex >= 56) {
         document.getElementById(selectedDisk.disk_Id).classList.add("King")
     }
     if (player_Turn === false && selectedDisk.disk_Id >= 12 && modifiedIndex <= 7) {
@@ -321,7 +321,7 @@ function removeEventListeners() {
 // Checks for a win
 function checkForWin() {
     if (white_Disk_count === 0) {
-        divider.style.display = "none";
+        turn_Divider.style.display = "none";
         for (let i = 0; i < black_Disk_Turn.length; i++) {
             black_Disk_Turn[i].style.color = "black";
             white_Disk_Turn[i].style.display = "none";

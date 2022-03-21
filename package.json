@@ -1,0 +1,25 @@
+{
+  "name": "final_year_checkers_project",
+  "version": "1.0.0",
+  "description": "Final Year project",
+  "main": "app.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhalidO121/Final_year_checkers_project.git"
+  },
+  "author": "Khalid Okewole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhalidO121/Final_year_checkers_project/issues"
+  },
+  "homepage": "https://github.com/KhalidO121/Final_year_checkers_project#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "jasmine": "^4.0.2"
+  }
+}
