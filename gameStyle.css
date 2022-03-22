@@ -8,6 +8,10 @@ html{
     margin: auto;  
 }
 
+*:focus {
+    outline: 0 !important;
+}
+
 img{
     position: absolute;
     width: 30px;
@@ -37,6 +41,10 @@ p{
 
 span{
     display: inline-block;
+}
+
+a{
+    text-decoration: none;
 }
 
 
@@ -238,6 +246,85 @@ p.whiteWinsText{
     display: contents;
 }
 
+/* Player cannot move button  */
+.playerCannotMoveWrapper{
+    font-family: 'Kulim Park', sans-serif;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff;
+    border-style: outset;
+    border-radius: 10px;
+    padding: 7px;
+    border-width: 3px;
+    transition: all 1.5s;
+}
+
+.playerCannotMoveWrapper:hover{
+    transform: translate(-2px, 0px);
+    border-color: red;
+}
+
+.playerCannotMoveButton{
+    color: rgb(0, 0, 0);
+    border-spacing: 10px;
+}
+
+.playerCannotMove{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    background: rgba(78, 78, 78, 0.7);
+    z-index: 1;
+}
+
+.playerCannotMove:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.playerCannotMoveContent{
+    position: absolute;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 15px;
+    border-style: outset;
+    font-family: 'Kulim Park', sans-serif;
+    top: 35%;
+    max-height: 40%;
+    right: 28%;
+}
+
+
+.playerCannotMoveClose{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 36px;
+    display: inline-block;
+}
+
+.playerCannotMove:hover,
+.playerCannotMove:focus{
+    cursor: pointer;
+    /* transform: translate(0px, -2px); */
+}
+
+p.playerWinsText{
+    display: contents;
+}
 
 /* BACK TO MAIN MENU SIGN */
 .backToMainMenu{

@@ -32,7 +32,9 @@ img:hover{
 
 a {
   text-decoration: none;
+  color: black;
 }
+
 /* CHECKERS LOGO AND SLIDE SCREEN */
 header {
     position: absolute;
