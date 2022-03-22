@@ -91,7 +91,7 @@ td:hover{
 }
 
 .black_Turn_Sign {
-    font-family: 'VT323', monospace;
+    font-family: 'Kulim Park', sans-serif;
     position: absolute;
     top: 33%;
     right: 7%;
@@ -104,7 +104,7 @@ td:hover{
 }
 
 .white_Turn_Sign {
-    font-family: 'VT323', monospace;
+    font-family: 'Kulim Park', sans-serif;
     position: absolute;
     top: 45%;
     right: 7%;
@@ -121,6 +121,130 @@ td:hover{
     position: absolute;
     top: 34%;
     right: 10%;
-    font-size: 90px; 
+    font-size: 90px;
+    /* display:block; */
 }
 
+/* BLACK WINS POP UP BOX! */
+
+.blackWins{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    background: rgba(78, 78, 78, 0.7);
+    transition: all 0.7s;
+    z-index: 1;
+}
+
+.blackWins:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.blackWinsContent{
+    position: absolute;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 15px;
+    border-style: outset;
+    font-family: 'Kulim Park', sans-serif;
+    top: 35%;
+    max-height: 40%;
+    right: 28%;
+}
+
+
+.blackWinsClose{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 36px;
+    display: inline-block;
+    /* border-width: 0; */
+}
+
+.blackWinsClose:hover,
+.blackWinsClose:focus{
+    cursor: pointer;
+    transform: translate(0px, -2px);
+}
+
+p.blackWinsText{
+    display: contents;
+}
+
+/* WHITE WINS POP UP BOX! */
+.whiteWins{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    background: rgba(78, 78, 78, 0.7);
+    transition: all 0.7s;
+    z-index: 1;
+}
+
+.whiteWins:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.whiteWinsContent{
+    position: absolute;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 15px;
+    border-style: outset;
+    font-family: 'Kulim Park', sans-serif;
+    top: 35%;
+    max-height: 40%;
+    right: 28%;
+}
+
+
+.whiteWinsClose{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 36px;
+    display: inline-block;
+    /* border-width: 0; */
+}
+
+.whiteWinsClose:hover,
+.whiteWinsClose:focus{
+    cursor: pointer;
+    transform: translate(0px, -2px);
+}
+
+p.whiteWinsText{
+    display: contents;
+}
+
+
+/* BACK TO MAIN MENU SIGN */
+.backToMainMenu{
+    position: absolute;
+    font-family: 'Kulim Park', sans-serif;
+    border-style: outset;
+    top: 3%;
+    left: 8%;
+    display: none;
+}

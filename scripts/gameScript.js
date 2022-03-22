@@ -20,9 +20,14 @@ let find_Disk = function (disk_Id) {
 const cells = document.querySelectorAll("td");
 let black_Disks = document.querySelectorAll("p");
 let white_Disks = document.querySelectorAll("span");
-const turn_Divider = document.querySelector("seperator");
-const black_Disk_Turn = document.querySelectorAll(".black_Turn_Sign");
-const white_Disk_Turn = document.querySelectorAll(".white_Turn_Sign");
+let turn_Divider = document.getElementById("seperator");
+let black_Disk_Turn = document.querySelectorAll(".black_Turn_Sign");
+let white_Disk_Turn = document.querySelectorAll(".white_Turn_Sign");
+let black_win_content = document.getElementById("blackWinsBox");
+let black_wins_close_button = document.getElementsByClassName("blackWinsClose")[0];
+let back_to_menu_sign = document.getElementById("backToMainMenu")
+let white_wins_content = document.getElementById("whiteWinsBox");
+let white_wins_close_button = document.getElementsByClassName("whiteWinsClose")[0];
 
 // ------------Properties of each player------------
 
@@ -321,19 +326,30 @@ function removeEventListeners() {
 // Checks for a win
 function checkForWin() {
     if (white_Disk_count === 0) {
-        turn_Divider.style.display = "none";
         for (let i = 0; i < black_Disk_Turn.length; i++) {
-            black_Disk_Turn[i].style.color = "black";
-            white_Disk_Turn[i].style.display = "none";
-            black_Disk_Turn[i].textContent = "BLACK WINS!";
-        }
-    } else if ( black_Disk_count === 0) {
-        divider.style.display = "none";
-        for (let i = 0; i < white_Disk_Turn.length; i++) {            
-            white_Disk_Turn[i].style.color = "black";
             black_Disk_Turn[i].style.display = "none";
-            white_Disk_Turn[i].textContent = "WHITE WINS!";
+            white_Disk_Turn[i].style.display = "none";
         }
+        black_win_content.style.visibility = "visible";
+        black_wins_close_button.style.border = "none";
+        black_wins_close_button.onclick = function(){
+            black_win_content.style.display = "none";
+            back_to_menu_sign.style.display = "flex";
+        }
+        turn_Divider.style.display = "none";
+
+    } else if ( black_Disk_count === 0) {
+        for (let i = 0; i < white_Disk_Turn.length; i++) {            
+            white_Disk_Turn[i].style.display = "none";
+            black_Disk_Turn[i].style.display = "none";
+        }
+        white_wins_content.style.visibility = "visible";
+        white_wins_close_button.style.border = "none";
+        white_wins_close_button.onclick = function(){
+            white_wins_content.style.display = "none";
+            back_to_menu_sign.style.display = "flex";
+    }
+        turn_Divider.style.display = "none";
     }
     changePlayer();
 }
@@ -353,6 +369,6 @@ function changePlayer() {
         }
     }
     giveDisksEventListeners();
-  }
+}
   
   giveDisksEventListeners();

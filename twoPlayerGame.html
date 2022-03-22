@@ -7,6 +7,7 @@
     <title>TwoPlayerGame</title>
     <script defer src="scripts/gameScript.js"></script>
     <link rel="stylesheet" href="gameStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=DotGothic16&family=Geostar+Fill&family=Kulim+Park:ital@1&family=Ma+Shan+Zheng&family=Montserrat+Alternates:ital,wght@0,100;1,300&family=Permanent+Marker&family=Special+Elite&family=Stick+No+Bills:wght@500&family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Creating the chessboard -->
@@ -105,9 +106,33 @@
     <div class="white_Turn_Sign">
         WHITE TURN!
     </div>
-    <div class="seperator">----</div>
+    <div id="seperator" class="seperator">----</div>
     <div class="black_Turn_Sign">
         BLACK TURN!
     </div>
+
+    <!-- Black Wins modal box -->
+    <div id="blackWinsBox" class="blackWins">
+        <div class="blackWinsContent">
+            <h1>BLACK WINS!</h1>
+            <p class="blackWinsText">Black disks took all the white disks!</p>
+            <span style="border-width: 0;" class="blackWinsClose">&times;</span>
+        </div>
+    </div>
+
+    <!-- White Wins modal Box -->
+    <div id="whiteWinsBox" class="whiteWins">
+        <div class="whiteWinsContent">
+            <h1>WHITE WINS!</h1>
+            <p class="whiteWinsText">White disks took all the black disks!</p>
+            <span style="border-width: 0;" class="whiteWinsClose">&times;</span>
+        </div>
+    </div>
+
+
+    <div id="backToMainMenu" class="backToMainMenu">
+        <h3>BACK TO MENU</h3>
+    </div>
+
 </body>
 </html>
