@@ -319,7 +319,6 @@ p.whiteWinsText{
 .playerCannotMove:hover,
 .playerCannotMove:focus{
     cursor: pointer;
-    /* transform: translate(0px, -2px); */
 }
 
 p.playerWinsText{
@@ -334,4 +333,79 @@ p.playerWinsText{
     top: 3%;
     left: 8%;
     display: none;
+}
+
+/* AUDIO BUTTON */
+.audioButtonWrapper{
+    font-family: 'Kulim Park', sans-serif;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #ffffff;
+    border-style: outset;
+    border-radius: 10px;
+    padding: 7px;
+    border-width: 3px;
+    transition: all 1.5s;
+}
+
+.audioButtonWrapper:hover{
+    transform: translate(-2px, 0px);
+    border-color: hsl(106, 100%, 50%);
+}
+
+.audioControlsButton{
+    color: rgb(0, 0, 0);
+    border-spacing: 10px;
+}
+
+.audioButton{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    background: rgba(78, 78, 78, 0.7);
+    z-index: 1;
+}
+
+.audioButton:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.audioButtonContent{
+    position: absolute;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 15px;
+    border-style: outset;
+    font-family: 'Kulim Park', sans-serif;
+    top: 35%;
+    max-height: 40%;
+    right: 28%;
+}
+
+
+.audioButtonClose{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 36px;
+    display: inline-block;
+}
+
+.audioButton:hover,
+.audioButton:focus{
+    cursor: pointer;
 }

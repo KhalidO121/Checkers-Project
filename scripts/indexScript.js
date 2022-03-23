@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () =>{
                     span.classList.remove('active');
                     span.classList.add('fade');
 
-                }, (idx + i) * 50)
+                }, (idx + 1) * 50)
             })
         },2000);
 
@@ -28,4 +28,5 @@ window.addEventListener('DOMContentLoaded', () =>{
         },4300);
     })
 })
+
 
