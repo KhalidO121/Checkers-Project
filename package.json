@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/KhalidO121/Final_year_checkers_project#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "websockets": "^0.2.0"
   },
   "devDependencies": {
     "jasmine": "^4.0.2"

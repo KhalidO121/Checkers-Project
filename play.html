@@ -13,6 +13,11 @@
     </head>
     <body>
 
+        <!-- When user gets to game screen they are connected to the server -->
+        <script>
+            const ws = new WebSocket("ws://localhost:8050");
+        </script>
+
         <!-- ADDING A BACK ARROW BACK TO MENU -->
     <a href="backToIndex.html">
         <img src="images/arrow-89-32.png" alt="">
