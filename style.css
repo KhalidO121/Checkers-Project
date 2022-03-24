@@ -299,11 +299,22 @@ transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 /* TWO PLAYER LINK */
-.twoPlayerLink{
+/* .twoPlayerLink{
     font-family: 'VT323', monospace;
     position: absolute;
     right: 45.5%;
     top: 50%;
+    height: 50px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #ffffff;
+    } */
+
+.twoPlayerLink{
+    font-family: 'VT323', monospace;
+    position: absolute;
+    right: 37.5%;
+    top: 40%;
     height: 50px;
     font-size: 40px;
     font-weight: 900;
