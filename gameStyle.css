@@ -12,6 +12,12 @@ html{
     outline: 0 !important;
 }
 
+/* Removes highlighting from page */
+::selection {
+    color: none;
+    background: none;
+}
+
 img{
     position: absolute;
     width: 30px;

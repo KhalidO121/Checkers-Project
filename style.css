@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-/* ::selection {
+::selection {
     color: none;
     background: none;
-} */
+}
 
 body{
     overflow: hidden;
