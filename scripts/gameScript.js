@@ -44,7 +44,7 @@ let player_Disks;
 //Keeping track of player's turn
 let player_Turn = true;
 
-// ---------Finding the exact location of the disk
+// ---------Finding the exact location of the disk----------
 let find_Disk = function (disk_Id) {
     let parsed_Integer = parseInt(disk_Id);
     return board.indexOf(disk_Id);
