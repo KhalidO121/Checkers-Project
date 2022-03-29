@@ -16,6 +16,10 @@
         <!-- When user gets to game screen they are connected to the server -->
         <script>
             const ws = new WebSocket("ws://localhost:8050");
+
+            ws.addEventListener("message", message => {
+                console.log(message.data);
+            });
         </script>
 
         <!-- ADDING A BACK ARROW BACK TO MENU -->
