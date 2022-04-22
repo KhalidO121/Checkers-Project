@@ -8,10 +8,7 @@
         
         <!--  -->
         <link rel="stylesheet" href="style.css">
-        <title>CHECKERS GAME</title>
-        <!-- SWUP TRANSITION LIBRARY -->
-        <div class="transition-fade"></div>
-        <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+        <title>CHECKERS GAME</title>  
     </head>
     <body>
 
