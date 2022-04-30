@@ -245,6 +245,49 @@ h3{
     }
 }
 
+/* Settings Box */
+.settings{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(49, 49, 49, 0.7);
+    transition: all 0.7s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.settings:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.settingsContent{
+    position: absolute;
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    padding: 1em 2em;
+    border-radius: 8px;
+    font-family: 'Special Elite', cursive;
+    top: 30%;
+    max-height: 40%;
+}
+
+
+.settingsClose{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #585858;
+    text-decoration: none;
+    font-size: 36px;
+}
+
 /* BACKGROUND PARTICLES */
 #particles-js {
     width: 100%;
@@ -393,48 +436,7 @@ transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 
 
 
-/* Settings Box */
-.settings{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(49, 49, 49, 0.7);
-    transition: all 0.7s;
-    visibility: hidden;
-    opacity: 0;
-}
 
-.settings:target{
-    visibility: visible;
-    opacity: 1;
-}
-
-.settingsContent{
-    position: absolute;
-    background: #fff;
-    width: 500px;
-    max-width: 90%;
-    padding: 1em 2em;
-    border-radius: 8px;
-    font-family: 'Special Elite', cursive;
-    top: 30%;
-    max-height: 40%;
-}
-
-
-.settingsClose{
-    position: absolute;
-    top: 0;
-    right: 15px;
-    color: #585858;
-    text-decoration: none;
-    font-size: 36px;
-}
 
 /* Play online box */
 
